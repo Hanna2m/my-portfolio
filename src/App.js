@@ -2,6 +2,7 @@ import Header from "./Component/header"
 import './App.css';
 import Greeting from "./Component/Greeting";
 import AboutMe from "./Component/About_me";
+import Projects from "./Component/Projects"
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
    <Header />
    <Greeting />
    <AboutMe />
+   <Projects />
    </>
   );
 }

@@ -1,6 +1,5 @@
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import { Box } from '@mui/system';
@@ -15,7 +14,7 @@ const SkillsItems = ({ icon, skills, description }) => {
                 display:'flex',
                 maxWidth: "400px",
                 justifyContent: "center" }}>
-               <img src={icon}/> 
+               <img src={icon} style={{filter: 'gray', filter: 'grayscale(100%)'}} alt="icon"/> 
             </Box>
           
           <CardContent sx={{
