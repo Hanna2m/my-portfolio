@@ -25,40 +25,30 @@ export default function AboutMe() {
 
     return (
         <>
-        <Box sx={{
-        maxHeight: '400px',
-        display: "flex",
-        flexDirection: "row",
-        marginBottom: "40px"
-    }}>
-        
-        <Box className='box35' sx={{
-            width: '30%',
-            marginLeft: '10%',
-            marginRight: '5%',
-            alignContent: 'center'}}>
-          { View }
-        </Box>
-        <Box sx={{
-            width: '60%',
-            marginLeft:'40px',
-            // marginTop: '60px'
-            alignContent: 'center'
-        }}>
-            <Box className='box60' >
-                <Typography variant="h4">About me</Typography>
-                <br></br>
-                <Typography variant="h5">
-                I'm developer with design background. I'm eager to create solutions where users' needs and business goals meet.
-                <br></br><br></br>
-                Every new task for me is an amazing opportunity to immerse myself in a new field of knowledge and try to make human's every day being even a little bit better.
-                </Typography>
-
-            </Box>  
-        </Box>
-
-        </Box>
-        
+        <Box sx={{display: "flex", flexDirection: "column"}}>
+            <Box sx={{
+            // maxHeight: '400px',
+            display: "flex",
+            flexDirection: "row",
+            marginBottom: "40px"
+            }}>
+                <Box className='box30' sx={{
+                    // width: '50%',
+                    // marginLeft: '10%',
+                    // marginRight: '10%',
+                    alignContent: 'center'}}>
+                    { View }
+                </Box>
+                <Box className='box60' >
+                    <Typography variant="h4">About me</Typography>
+                    <br></br>
+                    <Typography variant="h5">
+                    I'm developer with design background. I'm eager to create solutions where users' needs and business goals meet.
+                    <br></br><br></br>
+                    Every new task for me is an amazing opportunity to immerse myself in a new field of knowledge and try to make human's every day being even a little bit better.
+                    </Typography>
+                </Box>  
+            </Box>
 
         <Box sx={{ width: '100%' }}>
             <Grid container rowSpacing={2} columnSpacing={2} sx={{display: 'flex',
@@ -101,6 +91,9 @@ export default function AboutMe() {
                 </Grid>
             </Grid>
         </Box>
+
+        </Box>
+        
         
             
         </>
