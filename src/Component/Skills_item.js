@@ -14,7 +14,7 @@ const SkillsItems = ({ icon, skills, description }) => {
                 display:'flex',
                 maxWidth: "400px",
                 justifyContent: "center" }}>
-               <img src={icon} style={{filter: 'gray', filter: 'grayscale(100%)'}} alt="icon"/> 
+               <img src={icon} class="skill-img" alt="icon"/> 
             </Box>
           
           <CardContent sx={{
