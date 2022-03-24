@@ -26,21 +26,12 @@ export default function AboutMe() {
     return (
         <>
         <Box sx={{display: "flex", flexDirection: "column"}}>
-            <Box sx={{
-            // maxHeight: '400px',
-            display: "flex",
-            flexDirection: "row",
-            marginBottom: "40px"
-            }}>
-                <Box className='box30' sx={{
-                    // width: '50%',
-                    // marginLeft: '10%',
-                    // marginRight: '10%',
-                    alignContent: 'center'}}>
+            <Box className="about">
+                <Box className='box30'>
                     { View }
                 </Box>
                 <Box className='box60' >
-                    <Typography variant="h4">About me</Typography>
+                    <Typography variant="h4">ABOUT ME</Typography>
                     <br></br>
                     <Typography variant="h5">
                     I'm developer with design background. I'm eager to create solutions where users' needs and business goals meet.
@@ -50,40 +41,40 @@ export default function AboutMe() {
                 </Box>  
             </Box>
 
-        <Box sx={{ width: '100%' }}>
+        <Box className="skills" sx={{ width: '100%' }}>
             <Grid container rowSpacing={2} columnSpacing={2} sx={{display: 'flex',
                     justifyContent:'center', padding:'10%'}}>
-                <Grid item xs={4}>
+                <Grid item xs={12} md={6} lg={4}>
                 <SkillsItems 
                     icon={icon1} 
                     skills='HTML / CSS / UX UI'
                     description='Work from scratch to create a beautiful experience using Figma, HTML5 and CSS.' />
                 </Grid>
-                <Grid item xs={4}>
+                <Grid item xs={12} md={6} lg={4}>
                 <SkillsItems
                     icon={icon2}
                     skills='JavaScript'
                     description='Use in both sides web-development: fron-end and back-end.' />
                 </Grid>
-                <Grid item xs={4}>
+                <Grid item xs={12} md={6} lg={4}>
                 <SkillsItems
                     icon={icon3}
                     skills='React'
                     description='Create interactive UI, using Hooks and React-router' />
                 </Grid>
-                <Grid item xs={4}>
+                <Grid item xs={12} md={6} lg={4}>
                 <SkillsItems
                     icon={icon4}
                     skills='Node.js'
                     description='Use Node.js for creating API server to produce dynamic web-content' />
                 </Grid>
-                <Grid item xs={4}>
+                <Grid item xs={12} md={6} lg={4}>
                 <SkillsItems
                     icon={icon5}
                     skills='(NO)SQL DB'
                     description='Use Node.js for creating API server to produce dynamic web-content' />
                 </Grid>
-                <Grid item xs={4}>
+                <Grid item xs={12} md={6} lg={4}>
                 <SkillsItems
                     icon={icon6}
                     skills='REST API'
@@ -91,7 +82,9 @@ export default function AboutMe() {
                 </Grid>
             </Grid>
         </Box>
-
+        <Box className='skills-collaps'>
+            <Typography gutterBottom variant="h5">UX | JS | React | Node | (NO)SQL DB| REST API</Typography>
+        </Box>
         </Box>
         
         

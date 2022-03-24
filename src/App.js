@@ -10,7 +10,6 @@ function App() {
    <Header />
    <Greeting />
    <AboutMe />
-  
    <Projects />
    </>
   );
